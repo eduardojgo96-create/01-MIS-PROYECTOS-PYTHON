@@ -2,17 +2,19 @@ import streamlit as st
 
 # 1. Configuración de la pestaña del navegador
 st.set_page_config(
-    page_title="Portafolio Profesional | Ingeniero Industrial, Desarrollador Python", 
+    page_title="Portafolio Profesional | Ingeniero Civil Industrial", 
     page_icon="💻", 
     layout="centered"
 )
 
 # 2. Encabezado Principal y Perfil Profesional
 st.title("¡Hola! 👋 Soy Eduardo Gutiérrez Olavarría")
-st.subheader("Ingeniero Civil Industrial, Desarrollador Python enfocado en Soluciones Eficientes")
+st.subheader("Ingeniero Civil Industrial, Transformando Datos en Desiciones Estratégicas")
 
 st.write("""
-Apasionado por la resolución de problemas a través del código y la automatización. 
+Especialista en extraer, limpiar y modelar datos para transformarlos en insights comerciales 
+y dashboards interactivos. Apasionado por optimizar procesos de negocio y comunicar 
+métricas clave de forma clara para la toma de decisiones ejecutivas. Desarrollador Python enfocado en Soluciones Eficientes, Apasionado por la resolución de problemas a través del código y la automatización. 
 Actualmente enfocado en el desarrollo de software limpio, análisis de datos y creación 
 de aplicaciones web interactivas utilizando el ecosistema de Python.
 """)
@@ -34,6 +36,17 @@ st.markdown("### 🛠️ Tecnologías y Herramientas")
 st.write("**Lenguajes:** Python, SQL")
 st.write("**Frameworks y Librerías:** Streamlit, Pandas, NumPy, FastAPI")
 st.write("**Herramientas:** Microsoft Excel, Microsoft Power BI, VS Code")
+
+# Organizado por áreas clave del análisis
+col_tech1, col_tech2 = st.columns(2)
+with col_tech1:
+    st.markdown("**Análisis y Manipulación:**")
+    st.write("• Python (Pandas, NumPy)")
+    st.write("• SQL Server / PostgreSQL (Consultas complejas, Joins, CTEs)")
+with col_tech2:
+    st.markdown("**Visualización y BI:**")
+    st.write("• Power BI / Tableau")
+    st.write("• Matplotlib, Seaborn, Plotly")
 
 st.markdown("---")
 
